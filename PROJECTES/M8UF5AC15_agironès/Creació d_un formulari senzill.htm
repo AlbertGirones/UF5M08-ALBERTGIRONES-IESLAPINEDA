@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari d'enviament</title>
+    <script type="text/javascript">
+        function validar(){
+        var psswd=document.getElementById("psswd").value;
+        var confpsswd=document.getElementById("confpsswd").value;
+        if(psswd==confpsswd){
+        return true;
+        }
+        else{
+        alert("No coincideix");
+        return false;
+        }
+        }
+        </script>
+</head>
+<body>
+    <table style="font-family: Verdana;" align="center">
+        <tbody>
+            <tr bgcolor="306090" >
+                <td colspan="5" style="border:3px solid #306090"><h2>Enviar misatge <img src="img/gb_reload_s.gif" alt="Logo" align="right"></h2></td>
+            </tr>
+            <tr>
+                <form style="font-family: Verdana;" align="center" method="GET" action="mailto:albert.girones@inslapineda.cat" onsubmit="return validar();">
+                <tr>
+                    <td align="left"><label>Usuari:<input type="text" method="Usuari:" maxlength="8" required></label></td>
+                </tr>
+                <tr>
+                    <td align="left"><label>Contrasenya::<input type="password" method="psswd" required></label></td>
+                </tr>
+                <tr>
+                    <td align="left">Repetició de la contrasenya:<input type="password" method="confpsswd" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="">
+                            Quins jocs t'insteressen?
+                            <tr>
+                                <td><input type="checkbox" name="LoL" id="check">LoL</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="FIFA 21" id="check">FIFA 21</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="GTA V" id="check">GTA V</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="Fornite" id="check">Fornite</td>
+                            </tr>  
+                        </form>
+                    </td>       
+                </tr>
+                <tr>
+                    <th colspan="5">Missatge</th>
+                </tr>
+                <tr>
+                    <td colspan="5" align="center"><label><textarea name="" id="Descripció" cols="60" rows="5"></textarea></label></td>
+                </tr>
+                <tr>
+                    <td colspan="5" align="center"><label><input type="submit" value="Enviar"><input type="submit" value="Borrar"></label></td>
+                </tr>
+                </form>                  
+            </tr>
+        </tbody>
+    </table>
+    <h1>PER PRACTICAR VAIG INTENTAR FER ELS EXEMPLES</h1>
+    <table style="font-family: Verdana;" align="center">
+        <tbody>
+            <tr bgcolor="306090" >
+                <td colspan="5" style="border:3px solid #306090">Enviar misatge <img src="img/gb_reload_s.gif" alt="Logo" align="right"></td>
+            </tr>
+            <tr>
+                <form style="font-family: Verdana;" align="center" method="GET" action="mailto:albert.girones@inslapineda.cat">
+                <tr>
+                    <th align="right"><label>Nom:<input type="text" method="Nom:"></label></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th align="right"><label>E-Mail:<input type="text" method="E-Mail:"></label></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th align="right">Arxiu:<input type="text"></th>
+                    <td colspan="4"><input type="file"></td>
+                </tr>
+                <tr>
+                    <th align="right">Imatge:<input type="text"></th>
+                    <td colspan="4"><input type="file"></td>
+                </tr>
+                <tr>
+                    <td colspan="5" align="center">El tamany de l'arxiu i la imatge no por excedir els 4 KBytes</td>
+                </tr>
+                <tr>
+                    <td colspan="5" align="center">Requereix resposta:<labe><input type="radio" name="afirmació" id="Sí" size="50">Sí</label>
+                        <label><input type="radio" name="afirmació" id="No" size="50">No</label></td>
+                </tr>
+                <tr>
+                    <th colspan="5">Missatge</th>
+                </tr>
+                <tr>
+                    <td colspan="5" align="center"><label><textarea name="" id="Descripció" cols="30" rows="10"></textarea></label></td>
+                </tr>
+                <tr>
+                    <td colspan="5" align="center"><label><input type="submit" value="Enviar"><input type="submit" value="Borrar"></label></td>
+                </tr>
+                </form>                  
+            </tr>
+        </tbody>
+    </table>
+    <p></p>
+    <p></p>
+    <p></p>
+    <table style="font-family: Verdana;" align="center">
+        <tbody>
+            <tr bgcolor="306090" >
+                <td colspan="5" style="border:3px solid #306090"><h2>Enviar misatge <img src="img/gb_reload_s.gif" alt="Logo" align="right"></h2></td>
+            </tr>
+            <tr>
+                <form style="font-family: Verdana;" align="center" method="GET" action="mailto:albert.girones@inslapineda.cat">
+                <tr>
+                    <td align="left"><label>Nom:<input type="text" method="Nom:"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="left"><label>E-Mail:<input type="text" method="E-Mail:"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="left">Arxiu:<input type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="file"></td>
+                </tr>
+                <tr>
+                    <td align="left">Imatge:<input type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="file"></td>
+                </tr>
+                <tr>
+                    <td colspan="5" align="center">El tamany de l'arxiu i la imatge no por excedir els 4 KBytes</td>
+                </tr>
+                <tr>
+                    <td colspan="5" align="left">Requereix resposta:<labe><input type="radio" name="afirmació" id="Sí" size="50">Sí</label>
+                        <label><input type="radio" name="afirmació" id="No" size="50">No</label></td>
+                </tr>
+                <tr>
+                    <th colspan="5">Missatge</th>
+                </tr>
+                <tr>
+                    <td colspan="5" align="center"><label><textarea name="" id="Descripció" cols="60" rows="5"></textarea></label></td>
+                </tr>
+                <tr>
+                    <td colspan="5" align="center"><label><input type="submit" value="Enviar"><input type="submit" value="Borrar"></label></td>
+                </tr>
+                </form>                  
+            </tr>
+        </tbody>
+    </table>
+    <p></p>
+    <p></p>
+    <p></p>
+    <table style="font-family: Verdana;" align="center">
+        <tbody>
+            <tr bgcolor="306090" >
+                <td colspan="5" style="border:3px solid #306090"><p>Enviar misatge <img src="img/gb_reload_s.gif" alt="Logo" align="right"></p></td>
+            </tr>
+            <tr>
+                <form style="font-family: Verdana;" align="center" method="GET" action="mailto:albert.girones@inslapineda.cat">
+                <input type="hidden">
+                <tr>
+                    <th align="right"><label>Nom:</label></th>
+                    <td align="center"><input type="text" method="Nom:" size="50"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th align="right"><label>E-Mail:</label></th>
+                    <td align="center"><input type="text" method="E-Mail:" size="50"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th align="right">Arxiu:</th>
+                    <td align="center"><input type="text" size="50"></td>
+                    <td><input type="file"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th align="right">Imatge:</th>
+                    <td align="center"><input type="text" size="50"></td>
+                    <td><input type="file"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="left">El tamany de l'arxiu i la imatge no por excedir els 4 KBytes</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <th align="center">Requereix resposta:<labe><input type="radio" name="afirmació" id="Sí" size="50">Sí</label>
+                        <label><input type="radio" name="afirmació" id="No" size="50">No</label></th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <th align="center">Missatge</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="center"><label><textarea name="" id="Descripció" cols="50" rows="10"></textarea></label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="center"><label><input type="submit" value="Enviar"><input type="submit" value="Borrar"></label></td>
+                </tr>
+                </form>                  
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
