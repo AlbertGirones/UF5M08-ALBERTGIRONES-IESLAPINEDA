@@ -27,17 +27,16 @@
             <tr>
                 <form style="font-family: Verdana;" align="center" method="GET" action="mailto:albert.girones@inslapineda.cat" onsubmit="return validar();">
                 <tr>
-                    <td align="left"><label>Usuari:<input type="text" method="Usuari:" maxlength="8" required></label></td>
+                    <td align="left"><label>Usuari:<input type="text" id="Usuari:" maxlength="8" required></label></td>
                 </tr>
                 <tr>
-                    <td align="left"><label>Contrasenya::<input type="password" method="psswd" required></label></td>
+                    <td align="left"><label>Contrasenya::<input type="password" id="psswd" required></label></td>
                 </tr>
                 <tr>
-                    <td align="left">Repetició de la contrasenya:<input type="password" method="confpsswd" required></td>
+                    <td align="left">Repetició de la contrasenya:<input type="password" id="confpsswd" required></td>
                 </tr>
                 <tr>
                     <td>
-                        <form action="">
                             Quins jocs t'insteressen?
                             <tr>
                                 <td><input type="checkbox" name="LoL" id="check">LoL</td>
@@ -50,8 +49,7 @@
                             </tr>
                             <tr>
                                 <td><input type="checkbox" name="Fornite" id="check">Fornite</td>
-                            </tr>  
-                        </form>
+                            </tr>
                     </td>       
                 </tr>
                 <tr>
@@ -61,7 +59,7 @@
                     <td colspan="5" align="center"><label><textarea name="" id="Descripció" cols="60" rows="5"></textarea></label></td>
                 </tr>
                 <tr>
-                    <td colspan="5" align="center"><label><input type="submit" value="Enviar"><input type="submit" value="Borrar"></label></td>
+                    <td colspan="5" align="center"><label><input type="submit" value="Enviar"><input type="button" value="Borrar"></label></td>
                 </tr>
                 </form>                  
             </tr>
